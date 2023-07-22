@@ -1,0 +1,52 @@
+{
+  "-N_pskIiS7lh6bCKA0QF": {
+      "age": "24",
+      "firebaseKey": "-N_pvouMzk6lJozGGlmJ",
+      "image": "https://static.wikia.nocookie.net/nintendo/images/3/3e/MPSS_Mario.png/revision/latest?cb=20211102010317&path-prefix=en",
+      "name": "Mario",
+      "power": "Super Jump",
+      "species": "Human",
+      "team_id": "",
+      "uid": "jOjzIm0wE9WsWiYzARynUhifk5E3"
+  },
+  "-N_pvouMzk6lJozGGlmJ": {
+      "age": "24",
+      "firebaseKey": "-N_pvouMzk6lJozGGlmJ",
+      "image": "https://static.wikia.nocookie.net/nintendo/images/7/72/MPSS_Luigi.png/revision/latest/scale-to-width-down/253?cb=20211102010334&path-prefix=en",
+      "name": "Luigi",
+      "power": "Super Strength",
+      "species": "Human",
+      "team_id": "",
+      "uid": "jOjzIm0wE9WsWiYzARynUhifk5E3"
+  },
+  "-N_pwlli3zR3sB4U3vzd": {
+      "age": "22",
+      "firebaseKey": "-N_pwlli3zR3sB4U3vzd",
+      "image": "https://static.wikia.nocookie.net/nintendo/images/d/db/Peach_%28Mario_Portal%29.png/revision/latest/scale-to-width-down/284?cb=20230202133309&path-prefix=en",
+      "name": "Princess Peach",
+      "power": "Heart",
+      "species": "Human",
+      "team_id": "",
+      "uid": "jOjzIm0wE9WsWiYzARynUhifk5E3"
+  },
+  "-N_pxg7Gsp1um-H_ICrj": {
+      "age": "32",
+      "firebaseKey": "-N_pxg7Gsp1um-H_ICrj",
+      "image": "https://static.wikia.nocookie.net/nintendo/images/8/89/MPS_Toad_Artwork.png/revision/latest/scale-to-width-down/310?cb=20211102010458&path-prefix=en",
+      "name": "Toad",
+      "power": "Speed",
+      "species": "Toad",
+      "team_id": "",
+      "uid": "jOjzIm0wE9WsWiYzARynUhifk5E3"
+  },
+  "-N_pyQz41TEJmU41FBfr": {
+      "age": "34",
+      "firebaseKey": "-N_pyQz41TEJmU41FBfr",
+      "image": "https://static.wikia.nocookie.net/nintendo/images/4/4b/Bowser_%28Mario_Portal%29.png/revision/latest?cb=20230107054523&path-prefix=en",
+      "name": "Bowser",
+      "power": "Fire Breath",
+      "species": "Koopa",
+      "team_id": "",
+      "uid": "jOjzIm0wE9WsWiYzARynUhifk5E3"
+  }
+}
