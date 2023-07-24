@@ -1,3 +1,12 @@
+# (REACT) Team Roster - Super Mario Theme [![Netlify Status](https://api.netlify.com/api/v1/badges/0fbf049c-93af-453d-835d-28d079381151/deploy-status)](https://app.netlify.com/sites/davidbpoole-team-roster/deploys)
+
+# Overview
+This application demonstrates authentication, CRUD, and the ability to assign, edit and reassign members to different teams.
+
+[View App](https://davidbpoole-team-roster.netlify.app)
+# Contributor
+[David Poole](https://github.com/DavidBPoole)
+
 # React/Next.js Template
 
 [See Live Demo of this Template](https://drt-next-js-template.netlify.app/)
@@ -56,7 +65,7 @@ const examplePromise = () => {
     .catch((error) => {
       console.error(error);
     });
-});
+};
 ```
 
 ### Deploying on Netlify
