@@ -4,6 +4,10 @@
 This application demonstrates authentication, CRUD, and the ability to assign, edit and reassign members to different teams.
 
 [View App](https://davidbpoole-team-roster.netlify.app)
+
+# Screen Shot
+![Screenshot 2023-07-24 at 2 02 46 AM](https://github.com/DavidBPoole/INDIVIDUAL-ASSIGNMENT-Team-Roster/assets/127453405/4054932e-98e1-4907-91a1-7410200eb3c4)
+
 # Contributor
 [David Poole](https://github.com/DavidBPoole)
 
