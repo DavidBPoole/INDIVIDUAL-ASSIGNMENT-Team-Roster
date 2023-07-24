@@ -177,7 +177,7 @@ MemberForm.propTypes = {
     image: PropTypes.string,
     name: PropTypes.string,
     age: PropTypes.string,
-    power: PropTypes.bool,
+    power: PropTypes.string,
     role: PropTypes.string,
     firebaseKey: PropTypes.string,
   }),

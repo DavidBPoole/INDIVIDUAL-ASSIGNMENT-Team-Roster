@@ -51,6 +51,20 @@ const getSingleMember = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 // CREATE MEMBER
+// const createMember = (payload) => new Promise((resolve, reject) => {
+//   fetch(`${endpoint}/members.json`, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify(payload),
+//   })
+//     .then((response) => response.json())
+//     .then((data) => resolve(data))
+//     .catch(reject);
+// });
+
+// CREATE MEMBER **UPDATED TO PATCH FB KEY TO UNIQUE UID** STILL NOT WORKING!!!!
 const createMember = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/members.json`, {
     method: 'POST',
@@ -60,7 +74,16 @@ const createMember = (payload) => new Promise((resolve, reject) => {
     body: JSON.stringify(payload),
   })
     .then((response) => response.json())
-    .then((data) => resolve(data))
+    .then((data) => {
+      const setId = { firebaseKey: data.name };
+      fetch(`${endpoint}/members/${setId.firebaseKey}.json`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(setId),
+      }).then(resolve);
+    })
     .catch(reject);
 });
 
