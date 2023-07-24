@@ -6,38 +6,38 @@ Take some time to plan your project and track how the data will flow. **It is ex
 
 Here is the ERD for this project:
 
-![Screen Shot 2022-07-23 at 9 39 12 AM](https://user-images.githubusercontent.com/29741570/180609833-7f231bf4-42a5-4f0a-b8b1-fae1c78cffc4.png)
+![Screen Shot 2022-07-23 at 9 39 12 AM](https://user-images.githubusercontent.com/29741570/180609833-7f231bf4-42a5-4f0a-b8b1-fae1c78cffc4.png) ✅
 
 Here are the user stories that need to be completed:
-### Authentication
-* As a user, who is logged out, I should only be able to see the authentication screen
-* As a user who is logged out, I would like to be able to click on an authentication button and login via google.
-* As a user who is logged in, I should not be able to see the authentication button.
-* As a user who is logged in, I should be able to see the Team view.
-* As a user who is logged in, I should be able to see a log out button
+### Authentication ✅
+* As a user, who is logged out, I should only be able to see the authentication screen✅
+* As a user who is logged out, I would like to be able to click on an authentication button and login via google.✅
+* As a user who is logged in, I should not be able to see the authentication button.✅
+* As a user who is logged in, I should be able to see the Team view.✅
+* As a user who is logged in, I should be able to see a log out button✅
 
-### Routing
-* As an authenticated user, if I click the TEAM link in the navbar, I should navigate to '/team' and see an h1 tag that says 'Team'.
-* As an authenticated user, if I click the NEW link in the navbar, I should navigate to '/new' and see an h1 tag that says 'Add a Member'.
+### Routing ✅
+* As an authenticated user, if I click the TEAM link in the navbar, I should navigate to '/team' and see an h1 tag that says 'Team'.✅
+* As an authenticated user, if I click the NEW link in the navbar, I should navigate to '/new' and see an h1 tag that says 'Add a Member'.✅
 
-### CREATE Members
-* As an authenticated user, when I create a member, the member object should include my uid.
-* As an authenticated user, I should be able to click the NEW link in the navbar that displays a form to add a new member.
-* As an authenticated user, when I fill out the form and submit a new member should be created in firebase and should now show in my Team view.
+### CREATE Members ✅
+* As an authenticated user, when I create a member, the member object should include my uid.✅
+* As an authenticated user, I should be able to click the NEW link in the navbar that displays a form to add a new member.✅
+* As an authenticated user, when I fill out the form and submit a new member should be created in firebase and should now show in my Team view.✅
 
-### READ Members
-* As an authenticated user, I should be able to see the Team view with all the members I have created.
-* As an authenticated user I should not be able to see members that were created by another user.
+### READ Members ❌
+* As an authenticated user, I should be able to see the Team view with all the members I have created.✅
+* As an authenticated user I should not be able to see members that were created by another user. - NEEDS TO BE VERIFIED ❌
 
-### UPDATE Members
-* As an authenticated user, I should be able to see an edit button on each member card.
-* As an authenticated user, when I click the edit button I should see a form with the member information pre-populated in the form.
-* As an authenticated user, I should be able to edit the information in the form and hit the submit button.
-* As an authenticated user, when I submit the edit form firebase should be updated (PATCH request) and the Team view should update
+### UPDATE Members ✅
+* As an authenticated user, I should be able to see an edit button on each member card.✅
+* As an authenticated user, when I click the edit button I should see a form with the member information pre-populated in the form.✅
+* As an authenticated user, I should be able to edit the information in the form and hit the submit button.✅
+* As an authenticated user, when I submit the edit form firebase should be updated (PATCH request) and the Team view should update.✅
 
-### DELETE Members
-* As an authenticated user, I should see a delete button on each member.
-* As an authenticated user, when I click a delete button that member should be removed from firebase and the Team view should update.
+### DELETE Members ✅
+* As an authenticated user, I should see a delete button on each member.✅
+* As an authenticated user, when I click a delete button that member should be removed from firebase and the Team view should update.✅
 
 ---
 
@@ -97,4 +97,3 @@ This will require updates to the ERD
 
 * On public teams, users who did not create the team can ask to aquire a team and select one of their own PUBLIC teams to trade
 * A new link is added to the navigation named "Trade Requests" and there is a notification indicator that a request is in progress
-

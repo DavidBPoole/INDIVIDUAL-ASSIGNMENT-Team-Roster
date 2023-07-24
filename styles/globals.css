@@ -35,6 +35,10 @@ body {
   color: rgba(255, 0, 0, 0.774);
 }
 
+.copy-btn {
+  border: solid red 7px;
+}
+
 .nav-links {
   width: 200%;
 }

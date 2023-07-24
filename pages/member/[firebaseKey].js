@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
+// import Link from 'next/link';
+// import Button from 'react-bootstrap/Button';
 import { viewMemberDetails } from '../../api/MergedData';
 
 export default function ViewMember() {
@@ -26,11 +28,19 @@ export default function ViewMember() {
         <h5>
           {memberDetails.name}
         </h5>
+        <hr />
         <p>Species: {memberDetails.species}</p>
         <p>Age: {memberDetails.age}</p>
         <p>Role: {memberDetails.role}</p>
         <p>Powers: {memberDetails.power}</p>
         <p>Description: {memberDetails.description}</p>
+        <p>Kingdom(Team): {memberDetails.teamObject?.name}</p>
+        {/* <Link href={`/member/edit/${memberObj.firebaseKey}`} passHref>
+          <Button variant="info">EDIT</Button>
+        </Link>
+        <Button variant="danger" onClick={deleteThisMember} className="m-2">
+          DELETE
+        </Button> */}
       </div>
     </div>
   );

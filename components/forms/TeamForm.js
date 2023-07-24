@@ -48,7 +48,7 @@ function TeamForm({ obj }) {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <h2 className="text-black mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Team</h2>
+      <h2 className="text-black mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Team &#127812;</h2>
       <FloatingLabel controlId="floatingInput1" label="Team Name" className="mb-3">
         <Form.Control
           type="text"
@@ -69,20 +69,17 @@ function TeamForm({ obj }) {
           required
         />
       </FloatingLabel>
-      {/* <Form.Check
-        className="text-white mb-3"
-        type="switch"
-        id="Favorite"
-        name="favorite"
-        label="Favorite?"
-        checked={formInput.Favorite}
-        onChange={(e) => {
-          setFormInput((prevState) => ({
-            ...prevState,
-            favorite: e.target.checked,
-          }));
-        }}
-      /> */}
+      <FloatingLabel controlId="floatingInput2" label="Residents" className="mb-3">
+        <Form.Control
+          type="text"
+          placeholder="Enter Image URL"
+          name="residents"
+          value={formInput.residents}
+          onChange={handleChange}
+          required
+        />
+      </FloatingLabel>
+
       {/* SUBMIT BUTTON  */}
       <Button type="submit">{obj.firebaseKey ? 'Update' : 'Create'} Team</Button>
     </Form>

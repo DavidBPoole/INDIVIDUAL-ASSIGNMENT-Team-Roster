@@ -19,7 +19,8 @@ export default function TeamCard({ teamObj, onUpdate }) {
   };
 
   return (
-    <Card style={{ width: '18rem', margin: '10px' }}>
+    <Card style={{ width: '45rem', margin: '10px' }}>
+      <Card.Img variant="top" src={teamObj.image} alt={teamObj.name} style={{ height: '400px' }} />
       <Card.Body>
         <Card.Title>{teamObj.name}</Card.Title>
         {/* DYNAMIC LINK TO VIEW THE TEAM DETAILS  */}

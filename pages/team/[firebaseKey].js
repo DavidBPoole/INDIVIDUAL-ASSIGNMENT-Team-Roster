@@ -25,17 +25,18 @@ export default function ViewTeam() {
         <div className="d-flex flex-column">
           <img src={teamDetails.image} alt={teamDetails.name} style={{ width: '200px' }} />
         </div>
-        <div className="text-white ms-5 details">
+        <div className="text-black ms-5 details">
           <h5>
             {teamDetails.name}
           </h5>
           <hr />
+          <p>Residents: {teamDetails.residents}</p>
         </div>
       </div>
       <hr />
       <div className="d-flex flex-wrap">
-        {teamDetails.team?.map((team) => (
-          <MemberCard key={team.firebaseKey} teamObj={team} onUpdate={showTeamDetails} />
+        {teamDetails.members?.map((member) => (
+          <MemberCard key={member.firebaseKey} memberObj={member} onUpdate={showTeamDetails} />
         ))}
       </div>
     </>

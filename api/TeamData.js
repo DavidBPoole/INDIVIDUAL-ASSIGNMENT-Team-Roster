@@ -3,7 +3,6 @@
 // import axios from 'axios';
 import { clientCredentials } from '../utils/client';
 // import { deleteMember, getTeamMembers } from './memberData';
-// API CALLS FOR AUTHORS
 
 const endpoint = clientCredentials.databaseURL;
 
@@ -80,7 +79,7 @@ const updateTeam = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-// TODO: GET A SINGLE TEAM'S MEMBERS
+// GET A SINGLE TEAM'S MEMBERS
 const getTeamMembers = (firebaseKey) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/teams.json?orderBy="team_id"&equalTo="${firebaseKey}"`, {
     method: 'GET',

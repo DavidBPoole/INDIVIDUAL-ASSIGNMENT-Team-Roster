@@ -55,7 +55,7 @@ function MemberForm({ obj }) {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <h2 className="text-black mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Member</h2>
+      <h2 className="text-black mt-5">{obj.firebaseKey ? 'Update' : 'Create'} Member &#127812;</h2>
 
       {/* NAME INPUT  */}
       <FloatingLabel controlId="floatingInput1" label="Member Name" className="mb-3">
@@ -165,22 +165,6 @@ function MemberForm({ obj }) {
           required
         />
       </FloatingLabel>
-
-      {/* A WAY TO HANDLE UPDATES FOR TOGGLES, RADIOS, ETC
-      <Form.Check
-        className="text-white mb-3"
-        type="switch"
-        id="sale"
-        name="sale"
-        label="On Sale?"
-        checked={formInput.sale}
-        onChange={(e) => {
-          setFormInput((prevState) => ({
-            ...prevState,
-            sale: e.target.checked,
-          }));
-        }}
-      /> */}
 
       {/* SUBMIT BUTTON  */}
       <Button type="submit">{obj.firebaseKey ? 'Update' : 'Create'} Member</Button>
