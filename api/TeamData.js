@@ -1,8 +1,6 @@
 /* eslint-disable comma-dangle */
 /* eslint-disable consistent-return */
-// import axios from 'axios';
 import { clientCredentials } from '../utils/client';
-// import { deleteMember, getTeamMembers } from './memberData';
 
 const endpoint = clientCredentials.databaseURL;
 

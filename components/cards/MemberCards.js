@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Link from 'next/link';
 import { deleteMember } from '../../api/MemberData';
-// import { useAuth } from '../../utils/context/authContext';
 
 export default function MemberCard({ memberObj, onUpdate }) {
   const deleteThisMember = () => {

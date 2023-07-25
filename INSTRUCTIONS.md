@@ -1,8 +1,8 @@
-# Team Roster
-For this project you will be building a team roster.  Pick any kind of team you want (ie sports, educational, club, choir, etc).  Theme your project based on the type of team.
+# Team Roster ✅
+For this project you will be building a team roster.  Pick any kind of team you want (ie sports, educational, club, choir, etc).  Theme your project based on the type of team.✅
 
-## Requirements
-Take some time to plan your project and track how the data will flow. **It is expected that you will complete this assignment by the due date, so plan accordingly.**
+## Requirements ✅
+Take some time to plan your project and track how the data will flow. **It is expected that you will complete this assignment by the due date, so plan accordingly.**✅
 
 Here is the ERD for this project:
 
@@ -25,9 +25,9 @@ Here are the user stories that need to be completed:
 * As an authenticated user, I should be able to click the NEW link in the navbar that displays a form to add a new member.✅
 * As an authenticated user, when I fill out the form and submit a new member should be created in firebase and should now show in my Team view.✅
 
-### READ Members ❌
+### READ Members ✅
 * As an authenticated user, I should be able to see the Team view with all the members I have created.✅
-* As an authenticated user I should not be able to see members that were created by another user. - NEEDS TO BE VERIFIED ❌
+* As an authenticated user I should not be able to see members that were created by another user.✅
 
 ### UPDATE Members ✅
 * As an authenticated user, I should be able to see an edit button on each member card.✅
@@ -42,7 +42,7 @@ Here are the user stories that need to be completed:
 ---
 
 # :red_circle: STOP :red_circle:
-## Create an MVP branch from the main branch after completing all MVP and push it up to Github before starting stretch goals
+## Create an MVP branch from the main branch after completing all MVP and push it up to Github before starting stretch goals. ✅
 
 ---
 

@@ -1,4 +1,3 @@
-// import { useEffect } from 'react';
 import React, { useEffect, useState } from 'react';
 import { getMembers } from '../api/MemberData';
 import MemberCard from '../components/cards/MemberCards';
