@@ -6,8 +6,9 @@ import { clientCredentials } from '../utils/client';
 const endpoint = clientCredentials.databaseURL;
 
 // GET MEMBERS BY UID
+// https://davidbpoole-team-roster-default-rtdb.firebaseio.com/members.json?orderBy="uid"&equalTo="jOjzIm0wE9WsWiYzARynUhifk5E3"
 const getMembers = (uid) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/members.json?orderBy"uid"&equalTo"${uid}"`, {
+  fetch(`${endpoint}/members.json?orderBy="uid"&equalTo="${uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -51,20 +52,6 @@ const getSingleMember = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 // CREATE MEMBER
-// const createMember = (payload) => new Promise((resolve, reject) => {
-//   fetch(`${endpoint}/members.json`, {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//     },
-//     body: JSON.stringify(payload),
-//   })
-//     .then((response) => response.json())
-//     .then((data) => resolve(data))
-//     .catch(reject);
-// });
-
-// CREATE MEMBER **UPDATED TO PATCH FB KEY TO UNIQUE UID** STILL NOT WORKING!!!!
 const createMember = (payload) => new Promise((resolve, reject) => {
   fetch(`${endpoint}/members.json`, {
     method: 'POST',
@@ -74,18 +61,32 @@ const createMember = (payload) => new Promise((resolve, reject) => {
     body: JSON.stringify(payload),
   })
     .then((response) => response.json())
-    .then((data) => {
-      const setId = { firebaseKey: data.name };
-      fetch(`${endpoint}/members/${setId.firebaseKey}.json`, {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(setId),
-      }).then(resolve);
-    })
+    .then((data) => resolve(data))
     .catch(reject);
 });
+
+// CREATE MEMBER **UPDATED TO PATCH FB KEY TO UNIQUE UID** STILL NOT WORKING
+// const createMember = (payload) => new Promise((resolve, reject) => {
+//   fetch(`${endpoint}/members.json`, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify(payload),
+//   })
+//     .then((response) => response.json())
+//     .then((data) => {
+//       const setId = { firebaseKey: data.name };
+//       fetch(`${endpoint}/members/${setId.firebaseKey}.json`, {
+//         method: 'PATCH',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(setId),
+//       }).then(resolve);
+//     })
+//     .catch(reject);
+// });
 
 // UPDATE MEMBER
 const updateMember = (payload) => new Promise((resolve, reject) => {

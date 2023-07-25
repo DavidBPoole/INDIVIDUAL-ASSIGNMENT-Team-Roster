@@ -17,9 +17,11 @@ function Home() {
   const getAllTheMembers = () => {
     getMembers(user.uid).then(setMembers);
   };
+  console.warn(members);
 
   // API CALL TO GET ALL THE MEMBERS ON COMPONENT RENDER
   useEffect(() => {
+    document.title = 'Team Roster';
     getAllTheMembers();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
