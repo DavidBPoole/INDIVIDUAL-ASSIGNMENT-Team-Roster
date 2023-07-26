@@ -18,7 +18,7 @@ a {
 }
 
 body {
-  background-color: #88effd;
+  /* background-color: #88effd; */
   background-image: url("https://wallpapers.com/images/hd/nintendo-super-mario-landscape-tgb1s0mi127da2hb.jpg");
   /* background-size: cover; */
   background-attachment: fixed;
@@ -32,7 +32,8 @@ body {
 
 .profileWallpaper {
   /* background-image: url("https://wallpaperaccess.com/full/1544628.jpg") */
-  color: rgba(255, 0, 0, 0.774);
+  /* color: rgba(255, 0, 0, 0.774); */
+  /* color: royalblue; */
 }
 
 .copy-btn {

@@ -11,7 +11,7 @@ export default function NavBar() {
     <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Container>
         <Link passHref href="/">
-          <Navbar.Brand><Image src="https://logos-world.net/wp-content/uploads/2022/01/Super-Mario-Logo.png" width="25%" height="25%" alt="Super Mario Logo" /></Navbar.Brand>
+          <Navbar.Brand><Image src="https://logos-world.net/wp-content/uploads/2022/01/Super-Mario-Logo.png" width="30%" height="30%" alt="Super Mario Logo" /></Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
