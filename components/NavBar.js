@@ -18,21 +18,21 @@ export default function NavBar() {
           <Nav className="nav-links">
             {/* CLOSE NAVBAR ON LINK SELECTION: https://stackoverflow.com/questions/72813635/collapse-on-select-react-bootstrap-navbar-with-nextjs-not-working */}
             <Link passHref href="/">
-              <Nav.Link>&#127812;Members</Nav.Link>
+              <Nav.Link style={{ fontSize: 20 }}>&#127812;Members</Nav.Link>
             </Link>
             <Link passHref href="/member/new">
-              <Nav.Link>&#127812;Create Member</Nav.Link>
+              <Nav.Link style={{ fontSize: 20 }}>&#127812;Create Member</Nav.Link>
             </Link>
             <Link passHref href="/Teams">
-              <Nav.Link>&#127812;Teams</Nav.Link>
+              <Nav.Link style={{ fontSize: 20 }}>&#127812;Teams</Nav.Link>
             </Link>
             <Link passHref href="/team/new">
-              <Nav.Link>&#127812;Create Team</Nav.Link>
+              <Nav.Link style={{ fontSize: 20 }}>&#127812;Create Team</Nav.Link>
             </Link>
             <Link passHref href="/profile">
-              <Nav.Link>&#127812;Profile</Nav.Link>
+              <Nav.Link style={{ fontSize: 20 }}>&#127812;Profile</Nav.Link>
             </Link>
-            <Button variant="primary" size="md" onClick={signOut}>
+            <Button variant="primary" size="md" style={{ fontSize: 20 }} onClick={signOut}>
               &#127812;Sign Out
             </Button>
           </Nav>
