@@ -2,16 +2,23 @@
 import React from 'react';
 import Link from 'next/link';
 import {
-  Navbar, Container, Nav, Button, Image,
+  Navbar, Container, Nav, Image,
 } from 'react-bootstrap';
-import { signOut } from '../utils/auth';
+import { useAuth } from '../utils/context/authContext';
+import SignOut from './SignOut';
 
 export default function NavBar() {
+  const { user } = useAuth();
   return (
     <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
       <Container>
-        <Link passHref href="/">
+        {/* <Link passHref href="/">
           <Navbar.Brand><Image src="https://logos-world.net/wp-content/uploads/2022/01/Super-Mario-Logo.png" width="30%" height="30%" alt="Super Mario Logo" /></Navbar.Brand>
+        </Link> */}
+        <Link passHref href="/">
+          <Navbar.Brand>
+            <Image src="/logo.png" width="80%" height="80%" alt="icon" className="nav-logo" />
+          </Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -29,12 +36,20 @@ export default function NavBar() {
             <Link passHref href="/team/new">
               <Nav.Link style={{ fontSize: 20 }}>&#127812;Create Team</Nav.Link>
             </Link>
-            <Link passHref href="/profile">
+            {/* <Link passHref href="/profile">
               <Nav.Link style={{ fontSize: 20 }}>&#127812;Profile</Nav.Link>
-            </Link>
-            <Button variant="primary" size="md" style={{ fontSize: 20 }} onClick={signOut}>
-              &#127812;Sign Out
-            </Button>
+            </Link> */}
+            <div id="user-profile">
+              {/* <Button variant="primary" size="md" style={{ fontSize: 20 }} onClick={signOut}>
+                &#127812;Sign Out
+              </Button> */}
+              <Link passHref href="/profile">
+                <Image src={user.photoURL} alt="user" className="nav-photo" />
+              </Link>
+            </div>
+            <div id="signout-btn">
+              <SignOut />
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
