@@ -30,16 +30,29 @@ body {
   border: solid rgba(255, 0, 0, 0.774) 7px;
 }
 
-.profileWallpaper {
-  /* background-image: url("https://wallpaperaccess.com/full/1544628.jpg") */
-  /* color: rgba(255, 0, 0, 0.774); */
-  /* color: royalblue; */
+.user-profile {
+  margin-top: 2rem;
+  text-align: center;
+  /* padding: 6rem; */
+  /* background-image: url("https://wallpaperaccess.com/full/1544628.jpg");
+  color: rgba(255, 0, 0, 0.774);
+  color: royalblue; */
+}
+
+#userProfilePhoto {
+  border-radius: 50%;
 }
 
 .copy-btn {
   border: solid red 7px;
 }
 
-.nav-links {
-  width: 200%;
+.nav-photo {
+  border-radius: 50%;
+  height: auto;
+  max-width: 80%;
 }
+
+/* .nav-links {
+  width: 200%;
+} */
