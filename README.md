@@ -1,15 +1,31 @@
 # (REACT) Team Roster - Super Mario Theme [![Netlify Status](https://api.netlify.com/api/v1/badges/0fbf049c-93af-453d-835d-28d079381151/deploy-status)](https://app.netlify.com/sites/davidbpoole-team-roster/deploys)
 
 # Overview
-This application demonstrates authentication, CRUD, and the ability to assign, edit and reassign members to different teams.
+This application demonstrates authentication, CRUD, and the ability to organize, assign, edit and reassign team members to different teams.
 
+# About the User
+This application demonstrates team and organizational management.
+
+# Features
+- User authenticated login.
+- Ability to (CRUD) create, read, update, and delete members and also teams along with all their unique members.
+- Users can view their profiles.
+
+# Project Demo
 [View App](https://davidbpoole-team-roster.netlify.app)
 
-# Screen Shot
-![Screenshot 2023-07-24 at 2 02 46 AM](https://github.com/DavidBPoole/INDIVIDUAL-ASSIGNMENT-Team-Roster/assets/127453405/4054932e-98e1-4907-91a1-7410200eb3c4)
+# Project Images
+![Demo Image 1](https://github.com/DavidBPoole/INDIVIDUAL-ASSIGNMENT-Team-Roster/assets/127453405/34c67366-648d-4922-a2af-06c48efe0006)
+![Demo Image 2](https://github.com/DavidBPoole/INDIVIDUAL-ASSIGNMENT-Team-Roster/assets/127453405/b5cf6016-b4d4-4198-b980-ab8271b59cee)
+![Demo Image 3](https://github.com/DavidBPoole/INDIVIDUAL-ASSIGNMENT-Team-Roster/assets/127453405/89c1fcd2-0602-4903-8fd0-62301f61c959)
+![Demo Image 4](https://github.com/DavidBPoole/INDIVIDUAL-ASSIGNMENT-Team-Roster/assets/127453405/5d082929-5b78-4e49-a710-a7648fea4c0b)
+![Demo Image 5](https://github.com/DavidBPoole/INDIVIDUAL-ASSIGNMENT-Team-Roster/assets/127453405/efb42ec0-4ca3-44b7-bb82-00bc364177ce)
+![Demo Image 6](https://github.com/DavidBPoole/INDIVIDUAL-ASSIGNMENT-Team-Roster/assets/127453405/8373bda7-5977-427d-91ba-9172c37f98d4)
 
-# Contributor
+# Contributors
 [David Poole](https://github.com/DavidBPoole)
+
+**********************************************************
 
 # React/Next.js Template
 
